@@ -44,7 +44,7 @@ function handleInputSpacing(event) {
 function handleInputBlur(event) {
   root.style.setProperty("--blur", event.target.value + event.target.dataset.sizing); 
 }    
-// Le event?target.dataset.sizing permet de recupèrer la valeur de l'event par exemple ici c'est vw.
+// Le event?target.dataset.sizing permet de recupèrer la valeur de l'event par exemple ici c'est vh.
 
 function handleInputColor(event) {
   root.style.setProperty("--color", event.target.value);
