@@ -6,12 +6,20 @@
 - La valeur est définie par la valeur de l'input
 */
 
-const mySelect = document.getElementById("chooser");
-mySelect.addEventListener("input", colorSelected);
+// const mySelect = document.getElementById("chooser");
+// mySelect.addEventListener("input", colorSelected);
 
-let root = document.documentElement;
+// let root = document.documentElement;
 
-function colorSelected(event) {
-    console.log(event)
-    root.style.setProperty('--MainColor', event.target.value);
+// function colorSelected(event) {
+//     console.log(event)
+//     root.style.setProperty('--MainColor', event.target.value);
+// }
+
+const root = document.querySelector(":root");
+
+root.addEventListener("input", handleInputChangeColor);
+
+function handleInputChangeColor(event){
+    root.style.setProperty('--MainColor', event.target.value)
 }
