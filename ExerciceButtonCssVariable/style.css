@@ -12,7 +12,7 @@
   
   Ne pas oublier l'effet au survol (effet inversé / fond de la variable de couleur)*/
 
-  :root {
+  /* :root {
     --Color-red : red;
     --Color-green : green;
     --Color-yellow : yellow;
@@ -49,8 +49,6 @@
 .yellow{
     border: var(--Color-yellow) solid 1px;
 }
-
-
   .yellow:hover{
     background-color: var(--Color-yellow);
     color: white;
@@ -59,4 +57,26 @@
   .black:hover{
     background-color: var(--Color-black);
     color: white;
-  }
+  } */
+
+
+:root {
+  --color:black;
+  --font-color:white;
+}
+.btn:hover{
+  background-color: var(--color);
+  color: var(--font-color);
+}
+.red{
+  --color:red;
+}
+.green{
+  --color:green;
+}
+.blue{
+  --color:blue;
+}
+.yellow{
+  --color:yellow;
+}
